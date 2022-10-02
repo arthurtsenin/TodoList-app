@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="island">
+        <div class="island__item">
+          <form action="" id="form">
+            <div class="d-flex align-item-center">
+              <button type="button" class="btn btn-danger me-2 text-nowrap" id="deleteAllbutton">Delete all</button>
+              <input type="text" class="form-control me-2" id="todoContent" />
+              <button type="submit" class="btn btn-primary me-2 text-nowrap">Add</button>
+            </div>
+          </form>
+        </div>
+        <div class="island__item" id="list"></div>
+      </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+    <script src="./variables.js" type="module"></script>
+    <script src="./constructors.js" type="module"></script>
+    <script src="./templates.js" type="module"></script>
+  </body>
+</html>

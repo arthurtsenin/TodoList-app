@@ -1,0 +1,51 @@
+:root {
+	--bg-color: rgb(243, 244, 248);
+	--border-color: rgba(219, 222, 231, 0.795);
+}
+
+body {
+	background-color: var(--bg-color);
+}
+
+.island {
+	border-radius: 0.5rem;
+	background-color: rgba(219, 222, 231, 0.795);
+}
+
+.island__item {
+	padding: 1.5rem;
+}
+
+.island__item + .island__item {
+	border-top: 1px solid var(--border-color);
+}
+
+.todo {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background-color: var(--bg-color);
+}
+
+.checked {
+	background-color: rgba(12, 61, 209, 0.171);
+}
+
+.checked label {
+	text-decoration: line-through;
+}
+
+.todo {
+	margin-top: 0.25rem;
+	border: 3px solid rgb(245, 243, 243);
+	font-size: 30px;
+	color: black;
+	overflow: auto;
+}
+
+.form-check-label {
+	overflow-wrap: break-word;
+	max-width: 500px;
+}
